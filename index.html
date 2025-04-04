@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+
+<style>
+    .card1{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        padding-left: 500px;
+
+      }
+
+      .card {
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
+
+.heading {
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+  color: rgb(234, 237, 238);
+}
+
+.card p:not(.heading) {
+  font-size: 14px;
+}
+
+.card p:last-child {
+  color: #e81cff;
+  font-weight: 600;
+}
+
+.card:hover::after {
+  filter: blur(30px);
+}
+
+.card:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+
+
+    </style>
+
+    <title>Kevin</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><span>KEVIN</span> Concepts</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="nav-item nav-center" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>  
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">More</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sales</a></li>
+                  <li><a class="dropdown-item" href="#">Purchases</a></li>
+                  <li><a class="dropdown-item" href="#">Productions</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <hr>
+
+      <section class="card1">
+        <div class="card">
+          <p class="heading">
+            Welcome to this page
+          </p>
+          <p>
+            Powered By
+          </p>
+          <p>Kevin
+          </p>
+        </div>
+  
+        <br>
+  
+        <div class="card">
+          <p class="heading">
+            Popular for it consistency
+          </p>
+          <p>
+            Powered By
+          </p>
+          <p>Chibuike
+          </p>
+        </div>
+  
+
+      </section>
+
+      
+      <br>
+
+      <button class="button">
+        <div class="blob1"></div>
+        <div class="blob2"></div>
+        <div class="inner">KEVIN</div>
+      </button>
+
+      <br>
+
+      <button>
+        Button
+        <div class="star-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-3">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-5">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="star-6">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xml:space="preserve"
+            version="1.1"
+            style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+            viewBox="0 0 784.11 815.53"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <defs></defs>
+            <g id="Layer_x0020_1">
+              <metadata id="CorelCorpID_0Corel-Layer"></metadata>
+              <path
+                class="fil0"
+                d="M392.05 0c-20.9,210.08 -184.06,378.41 -392.05,407.78 207.96,29.37 371.12,197.68 392.05,407.74 20.93,-210.06 184.09,-378.37 392.05,-407.74 -207.98,-29.38 -371.16,-197.69 -392.06,-407.78z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </button>
+      
+      
+
+      <section class="container">
+          <div class="img1">
+            <img src="images/african-art-wall-art.jpg" alt="">
+            <h2>Great Painting One</h2>
+            <p>Looking at a great painting, it can be hard to remember that every artist was an absolute beginner at some stage. Everyone has to start somewhere, and it's perfectly okay if you don't know what kind of paint to use on your first canvas. This list of 16 commonly asked questions can help you get started learning to paint and have fun while doing it.</p>
+          </div>
+          <div class="img2">
+            <img src="images/Art5.jpeg" alt="">
+            <h2>Great Painting Two</h2>
+            <p>But you don't need to know how to draw in order to paint. All you need is the desire to create and the discipline to practice and develop your technique. You'll make plenty of mistakes, but that's part of the learning process. </p>
+          </div>
+          <div class="img3">
+            <img src="images/Art8.jpeg" alt="">
+            <h2>Great Painting Three</h2>
+            <p>The most common types of paint used are acrylic, oil, water-mixable oil, watercolor, and pastel. Each has its own characteristics and properties to master, and they all look unique. Oil paint has been used for hundreds of years and is known for its deep, rich hues. Watercolors, on the other hand, are translucent and delicate.</p>
+          </div>
+          <div class="img4">
+            <img src="images/Art6.jpeg" alt="">
+            <h2>Great Painting Four</h2>
+            <p>A good rule of thumb is to buy the best-quality paint you can for a price that you still feel able to experiment with and "waste" it. Try various brands and see which you like using.</p>
+          </div>
+        
+      </section>
+      
+   
+    
+</body>
+</html>
