@@ -1,120 +1,109 @@
-body{
-    margin-top: 20px;
-    font-size: 16px;
+body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f4f6f8;
+        margin: 0;
+        padding: 0;
+        color: #222;
 }
 
-h1,h2,h3,h4,h5,h6{
-    font-family: Poppins;
+.container {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+        border-radius: 10px;
+        padding: 40px 30px;
 }
 
-p{
-    font-family: Poppins;
+h1, h2 {
+        color: #2a4d69;
+        margin-bottom: 8px;
 }
 
-.navbar-default{
-    background: #fff;
-    border: 0;
-    font-family: Poppins;
+h1 {
+        font-size: 2.5em;
+        margin-top: 0;
 }
 
-.navbar-brand{
-    font-size: 20px;
-    color: #000 !important;
-    font-weight: bold;
+h2 {
+        font-size: 1.3em;
+        margin-top: 32px;
 }
 
-#showcase h1{
-    font-size: 50px;
-    margin-bottom: 20px;
+.profile {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 32px;
 }
 
-#showcase img{
-    width: 90%;
-    margin-left: 60px;
+.avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #e1e8ed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2.5em;
+        color: #2a4d69;
 }
 
-#showcase .showcase-right{
-    margin-top: 90px;
+.info {
+        flex: 1;
 }
 
-#testimonial{
-    background: #d8d5d5;
-    padding: 50px 0 30px 0;
-    text-align: center;
-    margin-top: 40px;
+.section {
+        margin-bottom: 24px;
 }
 
-#testimonial p{
-    font-size: 32px;
-    font-family: 'Josefin Sans';
-    color: #000;
+ul {
+        padding-left: 20px;
 }
 
-#testimonial p.customer{
-    font-size: 20px;
-    color: #666;
+.skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
 }
 
-#info1 .info-right{
-    margin-top: 90px;
-
+.skill {
+        background: #e1e8ed;
+        color: #2a4d69;
+        padding: 6px 14px;
+        border-radius: 16px;
+        font-size: 0.98em;
 }
 
-#info2{
-    margin: 20px 0 60px 0;
+.job {
+        margin-bottom: 18px;
 }
 
-#contact{
-    background:url(../images/smoke.jpg);
-    padding: 40px;
-    color: #fff;
-    border-top: #333 7px solid;
-    border-bottom: #333 7px solid;
+.job-title {
+        font-weight: bold;
+        color: #204060;
 }
 
-footer{
-    padding: 30px;
+.job-company {
+        color: #4f6d7a;
 }
 
-/* Dropdown Button */
-.dropbtn {
-    background-color: #85a096;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    border-radius: 20px;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
-    position: relative;
-    display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 110px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #2c772f;}
+.job-date {
+        font-size: 0.95em;
+        color: #888;
+}
+
+.edu {
+        margin-bottom: 14px;
+}
+
+.contact {
+        margin-top: 30px;
+        font-size: 1.05em;
+}
+
+@media (max-width: 600px) {
+.container { padding: 18px 6px; }
+.profile { flex-direction: column; align-items: flex-start; }
+.avatar { margin-bottom: 12px; }
+}
